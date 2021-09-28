@@ -14,24 +14,16 @@
 		235481532702BEE900B24A44 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 235481522702BEE900B24A44 /* Assets.xcassets */; };
 		235481562702BEE900B24A44 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 235481542702BEE900B24A44 /* LaunchScreen.storyboard */; };
 		235481612702BEE900B24A44 /* BetterMVCTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235481602702BEE900B24A44 /* BetterMVCTests.swift */; };
-		2354816B2702BEE900B24A44 /* BetterMVCUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2354816A2702BEE900B24A44 /* BetterMVCUITests.swift */; };
-		2354816D2702BEE900B24A44 /* BetterMVCUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2354816C2702BEE900B24A44 /* BetterMVCUITestsLaunchTests.swift */; };
 		2354817E2702C0C500B24A44 /* GameResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2354817D2702C0C500B24A44 /* GameResponse.swift */; };
 		235481812702C33700B24A44 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235481802702C33700B24A44 /* NetworkService.swift */; };
 		235481842702C35A00B24A44 /* ErrorHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235481832702C35A00B24A44 /* ErrorHelper.swift */; };
 		235481862702C37100B24A44 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235481852702C37100B24A44 /* Constant.swift */; };
 		235481882702C37800B24A44 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235481872702C37800B24A44 /* Endpoint.swift */; };
+		2354818B2702CD8E00B24A44 /* GameImplemention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2354818A2702CD8E00B24A44 /* GameImplemention.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		2354815D2702BEE900B24A44 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 2354813E2702BEE700B24A44 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 235481452702BEE700B24A44;
-			remoteInfo = BetterMVC;
-		};
-		235481672702BEE900B24A44 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 2354813E2702BEE700B24A44 /* Project object */;
 			proxyType = 1;
@@ -51,14 +43,12 @@
 		235481572702BEE900B24A44 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2354815C2702BEE900B24A44 /* BetterMVCTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BetterMVCTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		235481602702BEE900B24A44 /* BetterMVCTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BetterMVCTests.swift; sourceTree = "<group>"; };
-		235481662702BEE900B24A44 /* BetterMVCUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BetterMVCUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		2354816A2702BEE900B24A44 /* BetterMVCUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BetterMVCUITests.swift; sourceTree = "<group>"; };
-		2354816C2702BEE900B24A44 /* BetterMVCUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BetterMVCUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		2354817D2702C0C500B24A44 /* GameResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameResponse.swift; sourceTree = "<group>"; };
 		235481802702C33700B24A44 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		235481832702C35A00B24A44 /* ErrorHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorHelper.swift; sourceTree = "<group>"; };
 		235481852702C37100B24A44 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		235481872702C37800B24A44 /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		2354818A2702CD8E00B24A44 /* GameImplemention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameImplemention.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,13 +66,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		235481632702BEE900B24A44 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -91,7 +74,6 @@
 			children = (
 				235481482702BEE700B24A44 /* BetterMVC */,
 				2354815F2702BEE900B24A44 /* BetterMVCTests */,
-				235481692702BEE900B24A44 /* BetterMVCUITests */,
 				235481472702BEE700B24A44 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -101,7 +83,6 @@
 			children = (
 				235481462702BEE700B24A44 /* BetterMVC.app */,
 				2354815C2702BEE900B24A44 /* BetterMVCTests.xctest */,
-				235481662702BEE900B24A44 /* BetterMVCUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -111,8 +92,9 @@
 			children = (
 				2354817A2702C0AD00B24A44 /* Base */,
 				235481822702C34C00B24A44 /* Constant */,
-				2354817F2702C32700B24A44 /* Service */,
 				2354817C2702C0BD00B24A44 /* Model */,
+				2354817F2702C32700B24A44 /* Service */,
+				235481892702CD7600B24A44 /* Implementation */,
 				235481792702C0A700B24A44 /* Controller */,
 				2354817B2702C0B200B24A44 /* Storyboard */,
 				235481522702BEE900B24A44 /* Assets.xcassets */,
@@ -127,15 +109,6 @@
 				235481602702BEE900B24A44 /* BetterMVCTests.swift */,
 			);
 			path = BetterMVCTests;
-			sourceTree = "<group>";
-		};
-		235481692702BEE900B24A44 /* BetterMVCUITests */ = {
-			isa = PBXGroup;
-			children = (
-				2354816A2702BEE900B24A44 /* BetterMVCUITests.swift */,
-				2354816C2702BEE900B24A44 /* BetterMVCUITestsLaunchTests.swift */,
-			);
-			path = BetterMVCUITests;
 			sourceTree = "<group>";
 		};
 		235481792702C0A700B24A44 /* Controller */ = {
@@ -190,6 +163,14 @@
 			path = Constant;
 			sourceTree = "<group>";
 		};
+		235481892702CD7600B24A44 /* Implementation */ = {
+			isa = PBXGroup;
+			children = (
+				2354818A2702CD8E00B24A44 /* GameImplemention.swift */,
+			);
+			path = Implementation;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -228,24 +209,6 @@
 			productReference = 2354815C2702BEE900B24A44 /* BetterMVCTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		235481652702BEE900B24A44 /* BetterMVCUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 235481762702BEE900B24A44 /* Build configuration list for PBXNativeTarget "BetterMVCUITests" */;
-			buildPhases = (
-				235481622702BEE900B24A44 /* Sources */,
-				235481632702BEE900B24A44 /* Frameworks */,
-				235481642702BEE900B24A44 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				235481682702BEE900B24A44 /* PBXTargetDependency */,
-			);
-			name = BetterMVCUITests;
-			productName = BetterMVCUITests;
-			productReference = 235481662702BEE900B24A44 /* BetterMVCUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -260,10 +223,6 @@
 						CreatedOnToolsVersion = 13.0;
 					};
 					2354815B2702BEE900B24A44 = {
-						CreatedOnToolsVersion = 13.0;
-						TestTargetID = 235481452702BEE700B24A44;
-					};
-					235481652702BEE900B24A44 = {
 						CreatedOnToolsVersion = 13.0;
 						TestTargetID = 235481452702BEE700B24A44;
 					};
@@ -284,7 +243,6 @@
 			targets = (
 				235481452702BEE700B24A44 /* BetterMVC */,
 				2354815B2702BEE900B24A44 /* BetterMVCTests */,
-				235481652702BEE900B24A44 /* BetterMVCUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -307,13 +265,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		235481642702BEE900B24A44 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -324,6 +275,7 @@
 				235481862702C37100B24A44 /* Constant.swift in Sources */,
 				235481812702C33700B24A44 /* NetworkService.swift in Sources */,
 				235481882702C37800B24A44 /* Endpoint.swift in Sources */,
+				2354818B2702CD8E00B24A44 /* GameImplemention.swift in Sources */,
 				2354814E2702BEE700B24A44 /* ViewController.swift in Sources */,
 				2354814A2702BEE700B24A44 /* AppDelegate.swift in Sources */,
 				2354817E2702C0C500B24A44 /* GameResponse.swift in Sources */,
@@ -340,15 +292,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		235481622702BEE900B24A44 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				2354816B2702BEE900B24A44 /* BetterMVCUITests.swift in Sources */,
-				2354816D2702BEE900B24A44 /* BetterMVCUITestsLaunchTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -356,11 +299,6 @@
 			isa = PBXTargetDependency;
 			target = 235481452702BEE700B24A44 /* BetterMVC */;
 			targetProxy = 2354815D2702BEE900B24A44 /* PBXContainerItemProxy */;
-		};
-		235481682702BEE900B24A44 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 235481452702BEE700B24A44 /* BetterMVC */;
-			targetProxy = 235481672702BEE900B24A44 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -608,52 +546,6 @@
 			};
 			name = Release;
 		};
-		235481772702BEE900B24A44 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = S9J6B4A78J;
-				GENERATE_INFOPLIST_FILE = YES;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.windy.BetterMVCUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = BetterMVC;
-			};
-			name = Debug;
-		};
-		235481782702BEE900B24A44 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = S9J6B4A78J;
-				GENERATE_INFOPLIST_FILE = YES;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.windy.BetterMVCUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = BetterMVC;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -680,15 +572,6 @@
 			buildConfigurations = (
 				235481742702BEE900B24A44 /* Debug */,
 				235481752702BEE900B24A44 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		235481762702BEE900B24A44 /* Build configuration list for PBXNativeTarget "BetterMVCUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				235481772702BEE900B24A44 /* Debug */,
-				235481782702BEE900B24A44 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

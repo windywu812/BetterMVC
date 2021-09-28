@@ -9,6 +9,7 @@ import UIKit
 
 class ViewController: UITableViewController {
     
+    var gameImplemention: GameProtocol = GameImplemention()
     var games: [GameModel] = []
     var loadingIndicator: UIActivityIndicatorView!
     
@@ -18,28 +19,25 @@ class ViewController: UITableViewController {
         setupLoading()
         getAllGames()
     }
+
+    func getAllGames() {
+        gameImplemention.getAllGames { [weak self] result in
+            self?.loadingIndicator.stopAnimating()
+            switch result {
+            case .success(let games):
+                self?.games = games
+                self?.tableView.reloadData()
+            case .failure(let err):
+                self?.showAlert(message: err.errorDescription)
+            }
+        }
+    }
     
     func setupLoading() {
         loadingIndicator = UIActivityIndicatorView(style: .medium)
         loadingIndicator.startAnimating()
         view.addSubview(loadingIndicator)
         loadingIndicator.center = view.center
-    }
-
-    func getAllGames() {
-        NetworkService.shared.get(
-            type: GameResponse.self,
-            url: .getAll
-        ) { [weak self] result in
-            self?.loadingIndicator.stopAnimating()
-            switch result {
-            case.success(let response):
-                self?.games = response.results
-                self?.tableView.reloadData()
-            case .failure(let err):
-                self?.showAlert(message: err.errorDescription)
-            }
-        }
     }
     
 }
